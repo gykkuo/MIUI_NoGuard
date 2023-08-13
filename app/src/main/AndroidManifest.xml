@@ -17,7 +17,7 @@
     <!-- 模块的简介（在框架中显示） -->
     <meta-data
         android:name="xposeddescription"
-        android:value="我是Xposed模块简介" />
+        android:value="MIUI！我不需要你的保护！" />
     <!-- 模块最低支持的Api版本 一般填54即可 -->
     <meta-data
         android:name="xposedminversion"
