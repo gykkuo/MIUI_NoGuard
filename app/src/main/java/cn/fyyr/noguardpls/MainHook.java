@@ -17,7 +17,7 @@ public class MainHook implements IXposedHookLoadPackage{
                 XposedHelpers.findAndHookMethod(classs, "e", android.content.Context.class, new XC_MethodHook() {
                     @Override
                     protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                        XposedBridge.log("com.miui.guardprovider:执行拦截！");
+                        //XposedBridge.log("com.miui.guardprovider:执行拦截！");
                         param.setResult(false);
                     }
                 });
@@ -40,7 +40,7 @@ public class MainHook implements IXposedHookLoadPackage{
                 XposedHelpers.findAndHookMethod(classs, "w", long.class,long.class, new XC_MethodHook() {
                     @Override
                     protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                        XposedBridge.log("com.miui.analytics:执行拦截！ --- 1");
+                        //XposedBridge.log("com.miui.analytics:执行拦截！ --- 1");
                         param.setResult(null);
                     }
                 });
@@ -57,7 +57,7 @@ public class MainHook implements IXposedHookLoadPackage{
                 XposedHelpers.findAndHookMethod(classs, "y", long.class,long.class, new XC_MethodHook() {
                     @Override
                     protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                        XposedBridge.log("com.miui.analytics:执行拦截！ --- 2");
+                        //XposedBridge.log("com.miui.analytics:执行拦截！ --- 2");
                         param.setResult(null);
                     }
                 });
@@ -74,7 +74,7 @@ public class MainHook implements IXposedHookLoadPackage{
                     XposedHelpers.findAndHookMethod(classs, "a", Context.class, new XC_MethodHook() {
                         @Override
                         protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                            XposedBridge.log("com.miui.analytics:执行拦截！ --- 3");
+                            //XposedBridge.log("com.miui.analytics:执行拦截！ --- 3");
                             param.setResult(0);
                         }
                     });
@@ -87,7 +87,7 @@ public class MainHook implements IXposedHookLoadPackage{
                     XposedHelpers.findAndHookMethod(classs, "b", Context.class, new XC_MethodHook() {
                         @Override
                         protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                            XposedBridge.log("com.miui.analytics:执行拦截！ --- 4");
+                            //XposedBridge.log("com.miui.analytics:执行拦截！ --- 4");
                             param.setResult("NONE");
                         }
                     });
@@ -100,7 +100,7 @@ public class MainHook implements IXposedHookLoadPackage{
                     XposedHelpers.findAndHookMethod(classs, "c",  new XC_MethodHook() {
                         @Override
                         protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                            XposedBridge.log("com.miui.analytics:执行拦截！ --- 5");
+                            //XposedBridge.log("com.miui.analytics:执行拦截！ --- 5");
                             param.setResult(false);
                         }
                     });
